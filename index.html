@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>OVI en formato WEB con HTML5 & CCS3 - Grupo 10</h1>
+
+   <div class="container">
+
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">INICIO</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="Lecturas.html">LECTURAS</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="Multimedia.html">MULTIMEDIA</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="Actividades.html">ACTIVIDADES</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="Autores.html">AUTORES</a>
+                </div>
+
+
+            </div>
+
+            <div class="right-side">
+
+                 <div class="brand">
+                    <img src="Imagenes/ImagenUNAD.jpg">
+                </div>
+
+            </div>  
+
+        </div>
+
+
+        <div class="content-wrapper">
+
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Imagenes/Lecturas.jpg);"></div>
+                   
+                    <div class="img-text-wrapper">
+                        
+                        <div class="logo-wrapper">   
+                            <a href="Lecturas.html">                      
+                            <img src="images/logos/crondose.png">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            Este espacio está diseñado para iniciarse en el mundo del diseño web, proporcionando  información de lo más básico y fundamental para la creación de sitios web.
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Imagenes/Multimedia.jpg);"></div>
+                
+                    <div class="img-text-wrapper">
+                        
+                        <div class="logo-wrapper">
+                            <a href="Multimedia.html">
+                            <img src="images/logos/devcamp.png">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            Este espacio podras encontrar videos y herramientas que te ayudan a entender sobre la creacion de sitios web
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Imagenes/Actividades.jpg);"></div>
+                
+                    <div class="img-text-wrapper">
+                        
+                        <div class="logo-wrapper">
+                            <a href="Actividades.html">
+                            <img src="images/logos/dailysmarty.png">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            Este espacio cuenta con actividades que ayudaran a la compresion de la tematica tratada para la creacion de sitios web
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(Imagenes/Autores.jpg);"></div>
+                
+                    <div class="img-text-wrapper">
+                        
+                        <div class="logo-wrapper">
+                            <a href="Autores.html">
+                            <img src="images/logos/autores.png">
+                            </a>
+                        </div>
+
+                        <div class="subtitle">
+                            Autores que diseñaron y consolidaron la información sobre este tema, conocenos!.
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>  
+
+</body>
+<script>
+const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+    });
+});
+
+</script>
+</html>
