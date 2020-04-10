@@ -84,7 +84,7 @@ body h1 {
 
 .portfolio-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .portfolio-item-wrapper {
@@ -92,11 +92,12 @@ body h1 {
     align-content: center;
 }
 .portfolio-img-background {
-    height: 350px;
+    height: 400px;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter: brightness(70%);
 }
 
 .img-text-wrapper {
@@ -125,8 +126,8 @@ body h1 {
 }
 
 .img-text-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: crimson;
+    font-weight: 700;
+    color: orangered;
 }
 
 .img-darken {
@@ -134,6 +135,35 @@ body h1 {
     filter: brightness(10%);
 }
 
+.counter-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    
+}
+
+.portfolio-items-wrapper h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px;
+    color: darkblue;
+}
+
+.portfolio-items-wrapper h4 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0px;
+    color: darkblue;
+}
+
+.portfolio-items-wrapper p {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 2px;
+    color: black;
+}
 
 /* Multimedia */
 
@@ -153,3 +183,67 @@ body h1 {
 .theme-video-wrapper iframe {
     padding: 30px;
 }
+
+/* Lecturas*/
+.two-column2-wrapper {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+.two-column2-wrapper .left-nav-wrapper {
+    background-color: rgb(245, 243, 243);
+    display: block;
+    padding: 10px;
+
+}
+
+.active {
+    background-color: rgb(236, 168, 143);
+}
+
+.two-column2-wrapper .left-nav-wrapper a {
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 2px 1px 1px 16px;
+}
+
+.lectura-content-wrapper {
+    display: block;  
+    padding: 5px 50px 5px 50px;
+    text-align: justify;
+    
+}
+
+.lectura-content-img {   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} 
+
+
+/* Autores */
+
+.four-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.theme-img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.theme-img-wrapper img {
+    
+    height: 400px;
+    width: auto;
+    
+}
+
+
