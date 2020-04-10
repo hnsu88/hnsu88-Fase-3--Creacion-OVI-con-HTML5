@@ -90,9 +90,10 @@ body h1 {
 .portfolio-item-wrapper {
     position: relative;
     align-content: center;
+    font-size: calc(1em*0.8);
 }
 .portfolio-img-background {
-    height: 400px;
+    height: 100%;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -109,8 +110,8 @@ body h1 {
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .logo-wrapper img {
@@ -120,12 +121,15 @@ body h1 {
 
 
 .img-text-wrapper .subtitle {
+
     transition: 1s;
+    font-size: calc(1em*0.8);
     font-weight: 600;
     color: transparent;
 }
 
 .img-text-wrapper:hover .subtitle {
+
     font-weight: 700;
     color: orangered;
 }
@@ -173,6 +177,7 @@ body h1 {
 }
 
 .theme-content-wrapper {
+    font-size: calc(1em*0.8);
     padding: 30px;
 }
 
@@ -194,6 +199,7 @@ body h1 {
     background-color: rgb(245, 243, 243);
     display: block;
     padding: 10px;
+    font-size: calc(1em*0.8);
 
 }
 
@@ -212,7 +218,7 @@ body h1 {
     display: block;  
     padding: 5px 50px 5px 50px;
     text-align: justify;
-    
+    font-size: calc(1em*0.8);
 }
 
 .lectura-content-img {   
@@ -228,6 +234,7 @@ body h1 {
 .four-column-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: calc(1em*0.8);
 }
 
 
