@@ -15,7 +15,7 @@ body h1 {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
 }
 
 /* Estilos de barra de navegación */
@@ -84,7 +84,7 @@ body h1 {
 
 .portfolio-items-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33% 34% 33%;
 }
 
 .portfolio-item-wrapper {
@@ -93,7 +93,7 @@ body h1 {
     font-size: calc(1em*0.8);
 }
 .portfolio-img-background {
-    height: 100%;
+    min-height: 400px;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -123,7 +123,6 @@ body h1 {
 .img-text-wrapper .subtitle {
 
     transition: 1s;
-    font-size: calc(1em*0.8);
     font-weight: 600;
     color: transparent;
 }
@@ -192,7 +191,8 @@ body h1 {
 /* Lecturas*/
 .two-column2-wrapper {
     display: grid;
-    grid-template-columns: 0.2fr 1fr;
+    grid-template-columns: 20% 80%;
+    
 }
 
 .two-column2-wrapper .left-nav-wrapper {
